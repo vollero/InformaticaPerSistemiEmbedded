@@ -133,8 +133,8 @@ Esistono due modelli principali di automi a stati finiti:
 
 **Automa di Moore**
 
-- **Stati**: $Q = \{q_0, q_1\}$
-- **Output**: $\Delta = \{0, 1\}$
+- **Stati**: $Q = \left\lbrace q_0, q_1\right\rbrace$
+- **Output**: $\Delta = \left\lbrace 0, 1\right\rbrace$
 - **Funzione di Output**:
   - $\lambda(q_0) = 0$
   - $\lambda(q_1) = 1$
@@ -159,8 +159,8 @@ Esistono due modelli principali di automi a stati finiti:
 
 **Automa di Mealy**
 
-- **Stati**: $Q = \{q_{\text{pari}}, q_{\text{dispari}}\}$
-- **Output**: $\Delta = \{0, 1\}$
+- **Stati**: $Q = \left\lbrace q_{\text{pari}}, q_{\text{dispari}}\right\rbrace$
+- **Output**: $\Delta = \left\lbrace 0, 1\right\rbrace$
 - **Funzione di Output**:
 
 | Stato \ Input | 0       | 1       |
