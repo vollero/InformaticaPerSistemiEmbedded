@@ -59,7 +59,7 @@ dove:
 ### Componenti Chiave
 
 - **Stati $Q$**: Rappresentano le possibili configurazioni del sistema.
-- **Alfabeto $\Sigma**: Insieme dei simboli che l'automa può processare.
+- **Alfabeto $\Sigma$**: Insieme dei simboli che l'automa può processare.
 - **Funzione di Transizione $\delta$**: Definisce come l'automa cambia stato in risposta a un input.
 - **Stato Iniziale $q_0$**: Rappresenta la configurazione iniziale del sistema.
 - **Stati Finali $F$**: Rappresenta gli stati in cui si considera valida in terminazione una evoluzione del sistema.
@@ -107,8 +107,8 @@ Esistono due modelli principali di automi a stati finiti:
   - $Q$: Insieme finito di stati.
   - $\Sigma$: Alfabeto finito di input.
   - $\Delta$: Alfabeto finito di output.
-  - $\delta$: Funzione di transizione \( \delta: Q \times \Sigma \rightarrow Q \).
-  - $\lambda$: Funzione di output \( \lambda: Q \rightarrow \Delta \).
+  - $\delta$: Funzione di transizione $\delta: Q \times \Sigma \rightarrow Q$.
+  - $\lambda$: Funzione di output $\lambda: Q \rightarrow \Delta$.
   - $q_0$: Stato iniziale.
 
 ### 4.2 Automa di Mealy
@@ -130,15 +130,15 @@ Esistono due modelli principali di automi a stati finiti:
 
 ### Esempio 1: Riconoscimento di Parole che Terminano con 'a'
 
-**Problema**: Costruire un automa che riconosce parole sull'alfabeto \( \Sigma = \{a, b\} \) che terminano con 'a'.
+**Problema**: Costruire un automa che riconosce parole sull'alfabeto $\Sigma = \{a, b\}$ che terminano con 'a'.
 
 **Automa di Moore**
 
-- **Stati**: \( Q = \{q_0, q_1\} \)
-- **Output**: \( \Delta = \{0, 1\} \)
+- **Stati**: $Q = \{q_0, q_1\}$
+- **Output**: $\Delta = \{0, 1\}$
 - **Funzione di Output**:
-  - \( \lambda(q_0) = 0 \)
-  - \( \lambda(q_1) = 1 \)
+  - $\lambda(q_0) = 0$
+  - $\lambda(q_1) = 1$
   
 *Il valore di output indica se la stringa corrente termina con 'a' (1) o no (0).*
 
