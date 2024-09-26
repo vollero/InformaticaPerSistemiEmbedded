@@ -98,7 +98,7 @@ Definizione della funzione di transizione come un insieme di coppie ordinate o u
 
 ## 4. Modelli di Automa
 
-Esistono due modelli principali di automi a stati finiti:
+Esistono due modelli principali di automi a stati finiti (si trascura la presenza di $F$):
 
 ### 4.1 Automa di Moore
 
