@@ -146,13 +146,13 @@ Esistono due modelli principali di automi a stati finiti:
 
 | Stato \ Input | a           | b           |
 |---------------|-------------|-------------|
-| \( q_0 \)     | \( q_1 \)   | \( q_0 \)   |
-| \( q_1 \)     | \( q_1 \)   | \( q_0 \)   |
+| $q_0$         | $q_1$       | $q_0$       |
+| $q_1$         | $q_1$       | $q_0$       |
 
 **Interpretazione**:
 
-- **\( q_0 \)**: Ultimo carattere non è 'a'.
-- **\( q_1 \)**: Ultimo carattere è 'a'.
+- **$q_0$**: Ultimo carattere non è 'a'.
+- **$q_1$**: Ultimo carattere è 'a'.
 
 ### Esempio 2: Parità di Bit in una Stringa Binaria
 
@@ -160,21 +160,21 @@ Esistono due modelli principali di automi a stati finiti:
 
 **Automa di Mealy**
 
-- **Stati**: \( Q = \{q_{\text{pari}}, q_{\text{dispari}}\} \)
-- **Output**: \( \Delta = \{0, 1\} \)
+- **Stati**: $Q = \{q_{\text{pari}}, q_{\text{dispari}}\}$
+- **Output**: $\Delta = \{0, 1\}$
 - **Funzione di Output**:
 
 | Stato \ Input | 0       | 1       |
 |---------------|---------|---------|
-| \( q_{\text{pari}} \)   | 0       | 1       |
-| \( q_{\text{dispari}} \) | 1       | 0       |
+| $q_{\text{pari}}$    | 0       | 1       |
+| $q_{\text{dispari}}$ | 1       | 0       |
 
 **Funzione di Transizione**:
 
 | Stato \ Input | 0                     | 1                     |
 |---------------|-----------------------|-----------------------|
-| \( q_{\text{pari}} \)   | \( q_{\text{pari}} \)    | \( q_{\text{dispari}} \) |
-| \( q_{\text{dispari}} \) | \( q_{\text{dispari}} \) | \( q_{\text{pari}} \)    |
+| $q_{\text{pari}}$    | $q_{\text{pari}}$    | $q_{\text{dispari}}$ |
+| $q_{\text{dispari}}$ | $q_{\text{dispari}}$ | $q_{\text{pari}}$    |
 
 ---
 
@@ -188,7 +188,7 @@ Gli automi sono utilizzati per modellare e verificare il comportamento di algori
 - **Individuare Deadlock e Starvation**: Identificare situazioni in cui il sistema potrebbe bloccarsi o non progredire.
 - **Formal Verification**: Usare strumenti formali per dimostrare proprietà del sistema.
 
-*Esempio*: Modellare un protocollo di comunicazione come un automa per verificare che i messaggi vengano scambiati correttamente e che non si verifichino condizioni di gara.
+*Esempio*: Modellare un protocollo di comunicazione come un automa per verificare che i messaggi vengano scambiati correttamente e che non si verifichino *race condition*.
 
 ---
 
@@ -234,7 +234,7 @@ Gli automi sono utilizzati per modellare e verificare il comportamento di algori
 - **Alfabeto**: Insieme finito di simboli utilizzati come input.
 - **Funzione di Transizione**: Regola che determina le transizioni tra stati.
 - **Stato Iniziale**: Stato in cui l'automa inizia l'elaborazione.
-- **Stato Finale**: Stato in cui l'automa accetta l'input come valido.
+- **Stato Finale**: Stato che determina se l'automa termina la sua evoluzione in condizione corretta.
 - **Automa di Moore**: Modello in cui l'output dipende solo dallo stato attuale.
 - **Automa di Mealy**: Modello in cui l'output dipende dallo stato attuale e dall'input corrente.
 
