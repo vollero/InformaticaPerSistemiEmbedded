@@ -44,9 +44,9 @@ Un **Automa a Stati Finiti (ASF)** è un modello matematico utilizzato per descr
 
 Un **Automa a Stati Finiti (ASF)** è definito come una 5-upla:
 
-\[
+$\[
 M = (Q, \Sigma, \delta, q_0, F)
-\]
+\]$
 
 dove:
 
