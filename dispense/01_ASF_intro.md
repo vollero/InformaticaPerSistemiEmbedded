@@ -1,9 +1,9 @@
 # Dispense 
-# Introduzione agli Automati a Stati Finiti (ASF)
+# Introduzione agli Automi a Stati Finiti (ASF)
 
 ## Indice
 
-1. **Introduzione agli Automata a Stati Finiti**
+1. **Introduzione agli Automi a Stati Finiti**
 2. **Definizione Formale**
 3. **Modalità di Rappresentazione**
    - 3.1 Diagrammi di Stato
@@ -13,7 +13,7 @@
    - 4.1 Automa di Moore
    - 4.2 Automa di Mealy
 5. **Esempi di Utilizzo**
-6. **Applicazioni Avanzate degli Automata**
+6. **Applicazioni Avanzate degli Automi**
 7. **Attività Pratiche ed Esercizi**
 8. **Glossario**
 9. **Riferimenti**
@@ -50,11 +50,11 @@ $$
 
 dove:
 
-- **\( Q \)**: Insieme finito di stati.
-- **\( \Sigma \)**: Alfabeto finito di simboli di input.
-- **\( \delta \)**: Funzione di transizione \( \delta: Q \times \Sigma \rightarrow Q \).
-- **\( q_0 \)**: Stato iniziale, dove \( q_0 \in Q \).
-- **\( F \)**: Insieme degli stati finali (stati accettanti), dove \( F \subseteq Q \).
+- **$\( Q \)$**: Insieme finito di stati.
+- **$\( \Sigma \)$**: Alfabeto finito di simboli di input.
+- **$\( \delta \)$**: Funzione di transizione $\( \delta: Q \times \Sigma \rightarrow Q \)$.
+- **$\( q_0 \)$**: Stato iniziale, dove $\( q_0 \in Q \)$.
+- **$\( F \)$**: Insieme degli stati finali (stati accettanti), dove $\( F \subseteq Q \)$.
 
 ### Componenti Chiave
 
@@ -250,7 +250,7 @@ Gli automi sono utilizzati per modellare e verificare il comportamento di algori
 - **Risorse Online**:
 
   - [Tutorial sugli Automata a Stati Finiti](https://www.geeksforgeeks.org/introduction-of-finite-automata/)
-  - [Video Lezioni su Automata](https://www.youtube.com/playlist?list=PLB7540DEDD482705B)
+  - [Video Lezioni corso MIT *Mathematics for Computer Science*](https://www.youtube.com/playlist?list=PLB7540DEDD482705B)
 
 ---
 
