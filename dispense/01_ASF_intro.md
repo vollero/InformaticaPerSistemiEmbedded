@@ -129,7 +129,7 @@ Esistono due modelli principali di automi a stati finiti:
 
 ### Esempio 1: Riconoscimento di Parole che Terminano con 'a'
 
-**Problema**: Costruire un automa che riconosce parole sull'alfabeto $\Sigma = \{a, b\}$ che terminano con 'a'.
+**Problema**: Costruire un automa che riconosce parole sull'alfabeto $\Sigma = \left\lbracea, b\right\rbrace$ che terminano con 'a'.
 
 **Automa di Moore**
 
