@@ -115,8 +115,7 @@ Esistono due modelli principali di automi a stati finiti:
 
 - **Caratteristica**: L'output dipende sia dallo **stato attuale** che dall'**input corrente**.
 - **Definizione**: Un automa di Mealy è una 6-upla $(Q, \Sigma, \Delta, \delta, \lambda, q_0)$, dove:
-  - $Q$, $\Sigma$, $\Delta$, $q_0$ come sopra.
-  - $\delta$: Funzione di transizione $\delta: Q \times \Sigma \rightarrow Q$.
+  - $Q$, $\Sigma$, $\Delta$, $q_0$, $\delta$ come sopra.
   - $\lambda$: Funzione di output $\lambda: Q \times \Sigma \rightarrow \Delta$.
 
 ### Differenze Chiave
@@ -130,7 +129,7 @@ Esistono due modelli principali di automi a stati finiti:
 
 ### Esempio 1: Riconoscimento di Parole che Terminano con 'a'
 
-**Problema**: Costruire un automa che riconosce parole sull'alfabeto $\Sigma = \{a, b\}$ che terminano con 'a'.
+**Problema**: Costruire un automa che riconosce parole sull'alfabeto $\Sigma = {a, b}$ che terminano con 'a'.
 
 **Automa di Moore**
 
