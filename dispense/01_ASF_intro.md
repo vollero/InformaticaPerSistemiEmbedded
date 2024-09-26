@@ -50,19 +50,19 @@ $$
 
 dove:
 
-- **$\( Q \)$**: Insieme finito di stati.
-- **$\( \Sigma \)$**: Alfabeto finito di simboli di input.
-- **$\( \delta \)$**: Funzione di transizione $\( \delta: Q \times \Sigma \rightarrow Q \)$.
-- **$\( q_0 \)$**: Stato iniziale, dove $\( q_0 \in Q \)$.
-- **$\( F \)$**: Insieme degli stati finali (stati accettanti), dove $\( F \subseteq Q \)$.
+- **$Q$**: Insieme finito di stati.
+- **$\Sigma$**: Alfabeto finito di simboli di input.
+- **$\delta$**: Funzione di transizione $\delta: Q \times \Sigma \rightarrow Q$.
+- **$q_0$**: Stato iniziale, dove $q_0 \in Q$.
+- **$F$**: Insieme degli stati finali (stati accettanti), dove $F \subseteq Q$.
 
 ### Componenti Chiave
 
-- **Stati (\( Q \))**: Rappresentano le possibili configurazioni del sistema.
-- **Alfabeto (\( \Sigma \))**: Insieme dei simboli che l'automa può processare.
-- **Funzione di Transizione (\( \delta \))**: Definisce come l'automa cambia stato in risposta a un input.
-- **Stato Iniziale (\( q_0 \))**: Punto di partenza dell'elaborazione.
-- **Stati Finali (\( F \))**: Stati che determinano l'accettazione di una stringa.
+- **Stati $Q$**: Rappresentano le possibili configurazioni del sistema.
+- **Alfabeto $\Sigma**: Insieme dei simboli che l'automa può processare.
+- **Funzione di Transizione $\delta$**: Definisce come l'automa cambia stato in risposta a un input.
+- **Stato Iniziale $q_0$**: Rappresenta la configurazione iniziale del sistema.
+- **Stati Finali $F$**: Rappresenta gli stati in cui si considera valida in terminazione una evoluzione del sistema.
 
 ---
 
@@ -87,8 +87,8 @@ La tabella di transizione può essere rappresentata mettendo gli **stati attuali
 
 | Stato \ Input | a           | b           |
 |---------------|-------------|-------------|
-| \( q_0 \)     | \( q_1 \)   | \( q_0 \)   |
-| \( q_1 \)     | \( q_1 \)   | \( q_0 \)   |
+| $q_0$         | $q_1$       | $q_0$       |
+| $q_1$         | $q_1$       | $q_0$       |
 
 ### 3.3 Rappresentazione Matematica
 
@@ -103,21 +103,21 @@ Esistono due modelli principali di automi a stati finiti:
 ### 4.1 Automa di Moore
 
 - **Caratteristica**: L'output dipende solo dallo **stato attuale**.
-- **Definizione**: Un automa di Moore è una 6-upla \( (Q, \Sigma, \Delta, \delta, \lambda, q_0) \), dove:
-  - \( Q \): Insieme finito di stati.
-  - \( \Sigma \): Alfabeto finito di input.
-  - \( \Delta \): Alfabeto finito di output.
-  - \( \delta \): Funzione di transizione \( \delta: Q \times \Sigma \rightarrow Q \).
-  - \( \lambda \): Funzione di output \( \lambda: Q \rightarrow \Delta \).
-  - \( q_0 \): Stato iniziale.
+- **Definizione**: Un automa di Moore è una 6-upla $(Q, \Sigma, \Delta, \delta, \lambda, q_0)$, dove:
+  - $Q$: Insieme finito di stati.
+  - $\Sigma$: Alfabeto finito di input.
+  - $\Delta$: Alfabeto finito di output.
+  - $\delta$: Funzione di transizione \( \delta: Q \times \Sigma \rightarrow Q \).
+  - $\lambda$: Funzione di output \( \lambda: Q \rightarrow \Delta \).
+  - $q_0$: Stato iniziale.
 
 ### 4.2 Automa di Mealy
 
 - **Caratteristica**: L'output dipende sia dallo **stato attuale** che dall'**input corrente**.
-- **Definizione**: Un automa di Mealy è una 6-upla \( (Q, \Sigma, \Delta, \delta, \lambda, q_0) \), dove:
-  - \( Q \), \( \Sigma \), \( \Delta \), \( q_0 \) come sopra.
-  - \( \delta \): Funzione di transizione \( \delta: Q \times \Sigma \rightarrow Q \).
-  - \( \lambda \): Funzione di output \( \lambda: Q \times \Sigma \rightarrow \Delta \).
+- **Definizione**: Un automa di Mealy è una 6-upla $(Q, \Sigma, \Delta, \delta, \lambda, q_0)$, dove:
+  - $Q$, $\Sigma$, $\Delta$, $q_0$ come sopra.
+  - $\delta$: Funzione di transizione $\delta: Q \times \Sigma \rightarrow Q$.
+  - $\lambda$: Funzione di output $\lambda: Q \times \Sigma \rightarrow \Delta$.
 
 ### Differenze Chiave
 
