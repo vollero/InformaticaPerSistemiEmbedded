@@ -20,7 +20,7 @@
 
 ---
 
-## 1. Introduzione agli Automata a Stati Finiti
+## 1. Introduzione agli Automi a Stati Finiti
 
 ### Cos'è un Automa a Stati Finiti?
 
